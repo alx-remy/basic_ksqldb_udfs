@@ -10,7 +10,7 @@ Project :
 
 ```fs
   .
-  ├── kafka_dataset_generator.py    - test environment tool (cf. hands-on)
+  ├── kafka_dataset_generator.py    - test tool (cf. hands-on)
   └── KSQLDBExtensions              - source eclipse project
 ```
 
