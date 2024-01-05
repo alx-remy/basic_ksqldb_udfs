@@ -4,6 +4,14 @@ Here are some java functions I developped for KSQLDB following this guide https:
 
 KSQLDB currently lacks many basic SQL functions and I haven't found many community projects actively working on it. I'll try to update this repo with new functions, any contribution is appreciated.
 
+# Content
+
+```fs
+  .
+  ├── kafka_dataset_generator.py    - test environment tool (cf. hands-on)
+  └── KSQLDBExtensions              - source eclipse project
+```
+
 # Hands-on
 
 You can follow these steps to try these functions (assuming you've got a ksqldb server/cluster and the underlying kafka cluster set-up) :
