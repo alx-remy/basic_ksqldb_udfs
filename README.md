@@ -6,10 +6,42 @@ KSQLDB currently lacks many basic SQL functions and I haven't found many communi
 
 # Content
 
+Project :
+
 ```fs
   .
   ├── kafka_dataset_generator.py    - test environment tool (cf. hands-on)
   └── KSQLDBExtensions              - source eclipse project
+```
+
+Functions :
+
+```
+Name        : DELTA
+Overview    : Difference between two successive values
+Type        : AGGREGATE
+Variations  :
+  Variation   : DELTA(val1 DOUBLE)
+  Returns     : DOUBLE
+```
+
+```
+Name        : MODULO
+Overview    : Modulo operator for scalar columns and constants
+Type        : SCALAR
+Variations  :
+  Variation   : MODULO(v1 DOUBLE, v2 DOUBLE)
+  Returns     : DOUBLE
+  Variation   : MODULO(v1 DOUBLE, v2 BIGINT)
+  Returns     : DOUBLE
+  Variation   : MODULO(v1 DOUBLE, v2 INT)
+  Returns     : DOUBLE
+  Variation   : MODULO(v1 BIGINT, v2 BIGINT)
+  Returns     : BIGINT
+  Variation   : MODULO(v1 BIGINT, v2 INT)
+  Returns     : BIGINT
+  Variation   : MODULO(v1 INT, v2 INT)
+  Returns     : INT
 ```
 
 # Hands-on
